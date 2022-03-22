@@ -1,0 +1,35 @@
+<meta charset="UTF-8">
+
+<script>
+  function pulaLinha() {
+    document.write("<br><br>");
+  }
+
+  function mostra(frase) {
+    document.write(frase);
+    pulaLinha();
+  }
+
+  var anoCopa = 1930;
+
+  var anoLimite = parseInt(prompt("Até que ano deseja calcular?"));
+
+  while(anoCopa <= anoLimite) {
+    mostra("Teve copa em " + anoCopa);
+    anoCopa = anoCopa + 4;
+  }
+
+  mostra("FIM");
+  
+  var contador = 20;
+
+  while(contador <= 20 && contador >= 0) {
+    mostra(contador);
+    
+    contador = contador - 1;
+  }
+
+  mostra("FIM");
+
+
+</script>
